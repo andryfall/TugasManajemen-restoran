@@ -49,7 +49,7 @@ public class Restoran {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Daftar Menu:");
+                    System.out.println("Daftar Menuu:");
                     ArrayList<Menu> menuList = admin.getMenuList();
                     for (Menu menu : menuList) {
                         System.out.println(menu.getNamaMenu() + "\tRp. " + menu.getHarga());
