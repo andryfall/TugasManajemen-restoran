@@ -22,7 +22,7 @@ public class Kasir {
             transaksiHarian.put(namaMenu, harga);
         }
     }
-
+//sad
     public void akumulasiTransaksi() {
         int totalHargaTransaksi = 0;
         for (Integer harga : transaksiHarian.values()) {
