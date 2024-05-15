@@ -2,7 +2,7 @@ package com.mycompany.restoran;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
+//a
 public class Kasir {
     HashMap<String, Integer> transaksiHarian = new HashMap<String, Integer>();
     private ArrayList<HashMap<String, Integer>> transaksiBulanan = new ArrayList<HashMap<String, Integer>>();
