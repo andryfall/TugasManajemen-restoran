@@ -31,7 +31,7 @@ public class KasirTest {
     @Test
     public void testCatatTransaksi_NewMenu() {
         kasir.catatTransaksi("Ayam Goreng", 20000);
-        HashMap<String, Integer> transaksiHarian = kasir.transaksiHarian;  // Accessing default access level field
+        HashMap<String, Integer> transaksiHarian = kasir.transaksiHarian;  // Accessing default access level fieldd
         assertEquals(20000, transaksiHarian.get("Ayam Goreng").intValue());
     }
 
