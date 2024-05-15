@@ -22,11 +22,11 @@ public class Kasir {
             transaksiHarian.put(namaMenu, harga);
         }
     }
-//sad
+
     public void akumulasiTransaksi() {
         int totalHargaTransaksi = 0;
         for (Integer harga : transaksiHarian.values()) {
-            totalHargaTransaksi += harga;  
+            totalHargaTransaksi += harga;  // Fix: Accumulate the values
         }
         int totalHargaBahanBaku = admin.getTotalHargaBahanBaku();
         int pendapatanBersih = totalHargaTransaksi - totalHargaBahanBaku;
