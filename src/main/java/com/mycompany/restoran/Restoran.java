@@ -45,11 +45,11 @@ public class Restoran {
             System.out.print("Pilih menu (0-8): ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume the leftover newline character
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
-                    System.out.println("Daftar Menu:");
+                    System.out.println("Daftar Menuu:");
                     ArrayList<Menu> menuList = admin.getMenuList();
                     for (Menu menu : menuList) {
                         System.out.println(menu.getNamaMenu() + "\tRp. " + menu.getHarga());
