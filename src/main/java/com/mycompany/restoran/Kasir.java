@@ -26,7 +26,7 @@ public class Kasir {
     public void akumulasiTransaksi() {
         int totalHargaTransaksi = 0;
         for (Integer harga : transaksiHarian.values()) {
-            totalHargaTransaksi += harga;  // Fix: Accumulate the values
+            totalHargaTransaksi += harga;  
         }
         int totalHargaBahanBaku = admin.getTotalHargaBahanBaku();
         int pendapatanBersih = totalHargaTransaksi - totalHargaBahanBaku;
