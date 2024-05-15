@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
 package com.mycompany.restoran;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -9,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.HashMap;
+import java.util.ArrayList;
 
 public class KasirTest {
     private Kasir kasir;
@@ -59,11 +56,89 @@ public class KasirTest {
 class Admin {
     private int totalHargaBahanBaku;
 
+    private ArrayList<Menu> menuList = new ArrayList<>();
+    private ArrayList<BahanBaku> bahanBakuList = new ArrayList<>();
+
     public int getTotalHargaBahanBaku() {
         return totalHargaBahanBaku;
     }
 
     public void setTotalHargaBahanBaku(int totalHargaBahanBaku) {
         this.totalHargaBahanBaku = totalHargaBahanBaku;
+    }
+
+    public void tambahMenu(Menu menu) {
+        menuList.add(menu);
+    }
+
+    public void ubahMenu(Menu menu, String namaMenu, int harga) {
+        menu.setNamaMenu(namaMenu);
+        menu.setHarga(harga);
+    }
+
+    public void hapusMenu(Menu menu) {
+        menuList.remove(menu);
+    }
+
+    public ArrayList<Menu> getMenuList() {
+        return menuList;
+    }
+
+    public void tambahBahanBaku(BahanBaku bahanBaku) {
+        bahanBakuList.add(bahanBaku);
+    }
+}
+
+// Mock Menu class
+class Menu {
+    private String namaMenu;
+    private int harga;
+
+    public Menu(String namaMenu, int harga) {
+        this.namaMenu = namaMenu;
+        this.harga = harga;
+    }
+
+    public String getNamaMenu() {
+        return namaMenu;
+    }
+
+    public void setNamaMenu(String namaMenu) {
+        this.namaMenu = namaMenu;
+    }
+
+    public int getHarga() {
+        return harga;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
+}
+
+// Mock BahanBaku class
+class BahanBaku {
+    private String namaBahanBaku;
+    private int harga;
+
+    public BahanBaku(String namaBahanBaku, int harga) {
+        this.namaBahanBaku = namaBahanBaku;
+        this.harga = harga;
+    }
+
+    public String getNamaBahanBaku() {
+        return namaBahanBaku;
+    }
+
+    public void setNamaBahanBaku(String namaBahanBaku) {
+        this.namaBahanBaku = namaBahanBaku;
+    }
+
+    public int getHarga() {
+        return harga;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
     }
 }
