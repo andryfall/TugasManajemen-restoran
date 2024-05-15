@@ -45,11 +45,11 @@ public class Restoran {
             System.out.print("Pilih menu (0-8): ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine(); // consume the leftover newline character
 
             switch (choice) {
                 case 1:
-                    System.out.println("Daftar Menuu:");
+                    System.out.println("Daftar Menu:");
                     ArrayList<Menu> menuList = admin.getMenuList();
                     for (Menu menu : menuList) {
                         System.out.println(menu.getNamaMenu() + "\tRp. " + menu.getHarga());
@@ -136,7 +136,7 @@ public class Restoran {
                     exit = true;
                     break;
                 default:
-                    System.out.println("Pilihan tidak valid.");
+                    System.out.println("Pilihan tidak validdd.");
         }
     }
 
