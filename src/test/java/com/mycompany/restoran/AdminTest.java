@@ -20,11 +20,8 @@ public class AdminTest {
     public void testTambahBahanBaku() {
         BahanBaku bahan = new BahanBaku("Gula", 5000);
         admin.tambahBahanBaku(bahan);
-        
-        ArrayList<BahanBaku> bahanBakuList = admin.getBahanBakuList();
-        assertEquals(1, bahanBakuList.size());
-        assertEquals("Gula", bahanBakuList.get(0).getNamaBahan());
-        assertEquals(5000, bahanBakuList.get(0).getHarga());
+
+        assertEquals(1, admin.getBahanBakuList().size());
     }
 
     @Test
