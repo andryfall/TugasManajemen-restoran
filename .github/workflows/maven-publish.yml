@@ -22,6 +22,6 @@ jobs:
         settings.path: ${{github.workspace}}
 
     - name: Publish to Github Apache Maven
-      run: mvn deploy -s
+      run: mvn deploy
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
