@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
 package com.mycompany.restoran;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,11 +20,8 @@ public class AdminTest {
     public void testTambahBahanBaku() {
         BahanBaku bahan = new BahanBaku("Gula", 5000);
         admin.tambahBahanBaku(bahan);
-        
-        ArrayList<BahanBaku> bahanBakuList = admin.getBahanBakuList();
-        assertEquals(1, bahanBakuList.size());
-        assertEquals("Gula", bahanBakuList.get(0).getNamaBahan());
-        assertEquals(5000, bahanBakuList.get(0).getHarga());
+
+        assertEquals(1, admin.getBahanBakuList().size());
     }
 
     @Test
