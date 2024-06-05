@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.restoran.AdminTest" time="0.025" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.restoran.AdminTest" time="0.024" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ID"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\MSIGF6~1\AppData\Local\Temp\surefire17263402227767948901\surefirebooter9589018950343536236.jar C:\Users\MSI GF65\AppData\Local\Temp\surefire17263402227767948901 2024-06-04T18-40-32_098-jvmRun1 surefire2941763798275608910tmp surefire_08982629489246826673tmp"/>
+    <property name="sun.java.command" value="C:\Users\MSIGF6~1\AppData\Local\Temp\surefire6710320404322833473\surefirebooter12404875856866481443.jar C:\Users\MSI GF65\AppData\Local\Temp\surefire6710320404322833473 2024-06-05T09-33-40_864-jvmRun1 surefire7711646375330102592tmp surefire_016997450877357033835tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.restoran.AdminTest"/>
     <property name="surefire.test.class.path" value="D:\Tubes ManPro\TugasManajemen-restoran\target\test-classes;D:\Tubes ManPro\TugasManajemen-restoran\target\classes;C:\Users\MSI GF65\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\MSI GF65\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\MSI GF65\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\MSI GF65\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MSI GF65\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\MSI GF65\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\MSI GF65\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\MSI GF65\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\MSI GF65\.m2\repository\org\mockito\mockito-core\3.11.2\mockito-core-3.11.2.jar;C:\Users\MSI GF65\.m2\repository\net\bytebuddy\byte-buddy\1.11.3\byte-buddy-1.11.3.jar;C:\Users\MSI GF65\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.3\byte-buddy-agent-1.11.3.jar;C:\Users\MSI GF65\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\MSIGF6~1\AppData\Local\Temp\surefire17263402227767948901\surefirebooter9589018950343536236.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\MSIGF6~1\AppData\Local\Temp\surefire6710320404322833473\surefirebooter12404875856866481443.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
@@ -60,9 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testUbahMenu" classname="com.mycompany.restoran.AdminTest" time="0.016"/>
-  <testcase name="testHapusMenu" classname="com.mycompany.restoran.AdminTest" time="0"/>
-  <testcase name="testTambahMenu" classname="com.mycompany.restoran.AdminTest" time="0"/>
+  <testcase name="testUbahMenu" classname="com.mycompany.restoran.AdminTest" time="0.017"/>
+  <testcase name="testHapusMenu" classname="com.mycompany.restoran.AdminTest" time="0.001"/>
+  <testcase name="testTambahMenu" classname="com.mycompany.restoran.AdminTest" time="0.001"/>
   <testcase name="testTambahBahanBaku" classname="com.mycompany.restoran.AdminTest" time="0.001"/>
   <testcase name="testGetTotalHargaBahanBaku" classname="com.mycompany.restoran.AdminTest" time="0.001"/>
 </testsuite>

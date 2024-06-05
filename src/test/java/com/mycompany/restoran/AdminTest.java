@@ -23,7 +23,7 @@ public class AdminTest {
 
         assertEquals(1, admin.getBahanBakuList().size());
     }
-
+//asdasdasaasdasd
     @Test
     public void testTambahMenu() {
         Menu menu = new Menu("Nasi Goreng", 15000);
