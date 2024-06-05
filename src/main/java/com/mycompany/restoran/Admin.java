@@ -38,7 +38,7 @@ public class Admin {
     public ArrayList<Menu> getMenuList() {
         return menuList;
     }
-    //asdaw
+    //asdawadsas
     public int getTotalHargaBahanBaku() {
         int totalHarga = 0;
         for (BahanBaku bahanBaku : bahanBakuList) {
