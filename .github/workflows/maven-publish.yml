@@ -21,6 +21,84 @@ jobs:
         server-id: github
         settings.path: ${{github.workspace}}
 
+    - name: Create settings.xml
+      run: |
+          cat <<EOT > $GITHUB_WORKSPACE/settings.xml
+          <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                  https://maven.apache.org/xsd/settings-1.0.0.xsd">
+            <localRepository>/path/to/local/repo</localRepository>
+            <interactiveMode>true</interactiveMode>
+            <usePluginRegistry>false</usePluginRegistry>
+            <offline>false</offline>
+            <proxies>
+              <proxy>
+                <id>example-proxy</id>
+                <active>true</active>
+                <protocol>http</protocol>
+                <host>proxy.example.com</host>
+                <port>8080</port>
+                <username>proxyuser</username>
+                <password>somepassword</password>
+                <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
+              </proxy>
+            </proxies>
+            <servers>
+              <server>
+                <id>central</id>
+                <username>myuser</username>
+                <password>mypassword</password>
+              </server>
+              <server>
+                <id>company-repo</id>
+                <username>myuser</username>
+                <password>mypassword</password>
+              </server>
+            </servers>
+            <mirrors>
+              <mirror>
+                <id>mirrorId</id>
+                <mirrorOf>central</mirrorOf>
+                <url>http://central.maven.org/maven2</url>
+                <layout>default</layout>
+              </mirror>
+            </mirrors>
+            <profiles>
+              <profile>
+                <id>example-profile</id>
+                <repositories>
+                  <repository>
+                    <id>central</id>
+                    <url>http://repo.maven.apache.org/maven2</url>
+                    <releases>
+                      <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                      <enabled>true</enabled>
+                    </snapshots>
+                  </repository>
+                </repositories>
+                <pluginRepositories>
+                  <pluginRepository>
+                    <id>central</id>
+                    <url>http://repo.maven.apache.org/maven2</url>
+                    <releases>
+                      <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                      <enabled>true</enabled>
+                    </snapshots>
+                  </pluginRepository>
+                </pluginRepositories>
+              </profile>
+            </profiles>
+            <activeProfiles>
+              <activeProfile>example-profile</activeProfile>
+            </activeProfiles>
+          </settings>
+          EOT
+
     - name: Publish to Github Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
