@@ -20,7 +20,10 @@ jobs:
         distribution: 'temurin'
         server-id: github
         settings.path: ${{github.workspace}}
-
+        
+    - name: Create settings.xml
+      run: echo "${{ secrets.MAVEN_SETTINGS_XML }}" > $GITHUB_WORKSPACE/settings.xml
+      
     - name: Publish to Github Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
