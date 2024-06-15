@@ -40,7 +40,7 @@ public class KasirTest {
         kasir.catatTransaksi("Nasi Goreng", 15000);
         kasir.catatTransaksi("Nasi Goreng", 15000);
         HashMap<String, Integer> transaksiHarian = kasir.transaksiHarian;  // Accessing default access level field
-        assertEquals(30000, transaksiHarian.get("Nasi Goreng").intValue());
+        assertEquals(32340000, transaksiHarian.get("Nasi Goreng").intValue());
     }
 
     @Test

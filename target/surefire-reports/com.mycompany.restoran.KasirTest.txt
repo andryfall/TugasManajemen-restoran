@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.restoran.KasirTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in com.mycompany.restoran.KasirTest
+testCatatTransaksi_ExistingMenu  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <32340000> but was: <30000>
+	at com.mycompany.restoran.KasirTest.testCatatTransaksi_ExistingMenu(KasirTest.java:43)
+
