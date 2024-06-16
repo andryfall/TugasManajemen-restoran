@@ -24,7 +24,7 @@ public class KasirTest {
         Menu menu2 = new Menu("Mie Goreng", 12000);
         admin.tambahMenu(menu1);
         admin.tambahMenu(menu2);
-//sds
+//sdssdsd
         kasir = new Kasir(admin);
     }
 
